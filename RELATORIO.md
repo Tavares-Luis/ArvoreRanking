@@ -87,8 +87,13 @@ Se tivesse implementado a correção de cores da RN direito, talvez fechasse a d
 
 ## O Que Eu Aprendi
 
+<<<<<<< HEAD
 - RN não é mais rápido só porque faz menos rotações (recoloração dispara rotações também)
 - AVL tem estruturas bem mais compactas, o que ajuda muito em operações depois
+=======
+- RN não é magicamente mais rápido só porque faz menos rotações (recoloração dispara rotações também)
+- AVL acaba com estruturas bem mais compactas, o que ajuda muito em operações depois
+>>>>>>> 3b7397405af8fd2ed3e8ece543e64b40f703afb9
 - Implementar RN direito é bem mais complicado que parece
 
 ---
