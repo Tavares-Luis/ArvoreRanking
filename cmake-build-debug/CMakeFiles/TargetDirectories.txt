@@ -1,0 +1,3 @@
+/home/luis-tavares/wks/PEA/ranking/ranking/cmake-build-debug/CMakeFiles/untitled7.dir
+/home/luis-tavares/wks/PEA/ranking/ranking/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/luis-tavares/wks/PEA/ranking/ranking/cmake-build-debug/CMakeFiles/rebuild_cache.dir

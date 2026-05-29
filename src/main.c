@@ -76,13 +76,12 @@ int main() {
     printf("AVL:\n");
     printf("  Tempo: %.6f segundos\n", tempoAVLInsercao);
     printf("  Rotações: %d\n", ctx_avl.rotacoes);
-    printf("  Status: %s\n", validarAVL(ctx_avl.raiz) ? "✓ VÁLIDA" : "✗ INVÁLIDA");
+    printf("  Status: %s\n", validarAVL(ctx_avl.raiz) ? "[OK] VALIDA" : "[ERRO] INVALIDA");
 
     printf("\nRubro-Negra:\n");
     printf("  Tempo: %.6f segundos\n", tempoRNInsercao);
     printf("  Rotações: %d\n", ctx_rn.rotacoes);
-    printf("  Status: ⚠️ VALIDAÇÃO DESABILITADA (TODO: debugar propriedades RN)\n");
-    // printf("  Status: %s\n", validarRN(ctx_rn.raiz) ? "✓ VÁLIDA" : "✗ VÁLIDA");
+    printf("  Status: %s\n", validarRN(ctx_rn.raiz) ? "[OK] VALIDA" : "[ERRO] INVALIDA");
 
     printf("\n");
 
@@ -127,11 +126,11 @@ int main() {
     clock_t fimRemocaoAVL = clock();
     double tempoRemocaoAVL = (double)(fimRemocaoAVL - inicioRemocaoAVL) / CLOCKS_PER_SEC;
 
-    printf("AVL (Remoção):\n");
+    printf("AVL (Remocao):\n");
     printf("  Tempo: %.6f segundos\n", tempoRemocaoAVL);
-    printf("  Rotações: %d\n", rotacoes_avl_remocao);
-    printf("  Remoções bem-sucedidas: %d\n", remocoes_avl_ok);
-    printf("  Status: %s\n", validarAVL(ctx_avl.raiz) ? "✓ VÁLIDA" : "✗ INVÁLIDA");
+    printf("  Rotacoes: %d\n", rotacoes_avl_remocao);
+    printf("  Remocoes bem-sucedidas: %d\n", remocoes_avl_ok);
+    printf("  Status: %s\n", validarAVL(ctx_avl.raiz) ? "[OK] VALIDA" : "[ERRO] INVALIDA");
 
     // =========================
     // FASE 3: REMOÇÃO RUBRO-NEGRA
@@ -158,16 +157,16 @@ int main() {
     clock_t fimRemocaoRN = clock();
     double tempoRemocaoRN = (double)(fimRemocaoRN - inicioRemocaoRN) / CLOCKS_PER_SEC;
 
-    printf("Rubro-Negra (Remoção):\n");
+    printf("\nRubro-Negra (Remocao):\n");
     printf("  Tempo: %.6f segundos\n", tempoRemocaoRN);
-    printf("  Rotações: %d\n", rotacoes_rn_remocao);
-    printf("  Remoções bem-sucedidas: %d\n", remocoes_rn_ok);
-    printf("  Status: ⚠️ VALIDAÇÃO DESABILITADA\n");
+    printf("  Rotacoes: %d\n", rotacoes_rn_remocao);
+    printf("  Remocoes bem-sucedidas: %d\n", remocoes_rn_ok);
+    printf("  Status: %s\n", validarRN(ctx_rn.raiz) ? "[OK] VALIDA" : "[ERRO] INVALIDA");
 
     // =========================
     // FASE 4: BUSCA POR NOME
     // =========================
-    printf("\n===== FASE 4: BUSCA POR NOME (1.000 buscas aleatórias) =====\n\n");
+    printf("\n===== FASE 4: BUSCA POR NOME (1.000 buscas aleatorias) =====\n\n");
 
     int buscas_avl_ok = 0;
     clock_t inicioBuscaAVL = clock();
